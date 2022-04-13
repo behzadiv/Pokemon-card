@@ -19,7 +19,7 @@ const PokemonCardApp = () => {
       ) : error ? (
         <h2>{error.message}</h2>
       ) : (
-        <PokemonCardDetails data={data} />
+        <PokemonCardDetails  />
       )}
     </div>
   );
