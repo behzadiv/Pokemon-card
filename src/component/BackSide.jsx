@@ -1,17 +1,17 @@
 import { useSelector } from "react-redux";
 import { Progress } from "antd";
+import { startWithUpperCase } from "../utils/startWithUpperCase";
 const BackSide = () => {
   const { data } = useSelector((state) => state.pokemonData);
   const { id, name, stats } = data;
-  console.log(stats);
-  let myName = "";
+  let changedName = "";
   if (stats) {
-    myName = name.split("")[0].toUpperCase() + name.slice("1"); //chenge first letter to upperCase
+    changedName =startWithUpperCase(name)
   }
   return (
     <>
       <p className="id">#{id}</p>
-      <h2 className="name">{myName}</h2>
+      <h2 className="name">{changedName}</h2>
       <div className="back-body">
         <div className="abbility-container">
           {stats
