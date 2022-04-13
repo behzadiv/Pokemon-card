@@ -1,12 +1,14 @@
 
+import { Provider } from 'react-redux';
 import './App.css';
-import PokemonCard from './component/PokemonCard';
+import PokemonCardApp from './component/PokemonCardApp';
+import store from './redux/store';
 
 function App() {
   return (
-    <div> 
-        <PokemonCard/> 
-    </div>
+    <Provider store={store}>
+      <PokemonCardApp/>
+    </Provider>
   );
 }
 
