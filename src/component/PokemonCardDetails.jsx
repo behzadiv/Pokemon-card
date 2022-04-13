@@ -1,9 +1,9 @@
-import { ProgressBar } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import { Progress } from "antd";
+
+
 import "@fontsource/poppins";
 import { useSelector } from "react-redux";
 import FrontSide from "./FrontSide";
+import BackSide from "./BackSide";
 const PokemonCardDetails = () => {
   return (
     <div className="flip-card">
@@ -11,7 +11,9 @@ const PokemonCardDetails = () => {
         <div className="front-card">
           <FrontSide />
         </div>
-        <div className="back-card"></div>
+        <div className="back-card">
+          <BackSide />
+        </div>
       </div>
     </div>
   );

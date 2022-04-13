@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 
+
 const FrontSide = () => {
   const { data } = useSelector((state) => state.pokemonData);
   const { id, name, sprites, types } = data;
