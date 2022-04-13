@@ -1,13 +1,13 @@
-
-
 import "@fontsource/poppins";
-import { useSelector } from "react-redux";
 import FrontSide from "./FrontSide";
 import BackSide from "./BackSide";
 const PokemonCardDetails = () => {
+    const toFlipCart=()=>{
+        document.querySelector(".flip-card").classList.toggle("clicked")
+    }
   return (
-    <div className="flip-card">
-      <div className="inner-card">
+    <div className="flip-card" >
+      <div className="inner-card" onClick={()=>toFlipCart()}>
         <div className="front-card">
           <FrontSide />
         </div>

@@ -23,6 +23,7 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 .front-card,
 .back-card {
@@ -40,7 +41,7 @@ body {
 .back-card {
   transform: rotateY(180deg);
 }
-.flip-card:hover .inner-card {
+.flip-card.clicked .inner-card {
   transform: rotateY(180deg);
 }
 
