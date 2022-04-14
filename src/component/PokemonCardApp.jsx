@@ -19,7 +19,7 @@ const PokemonCardApp = () => {
   return (
     <div>
       {loading ? (
-        <h2>loading...</h2>
+        <div className="loading"><h2 >loading...</h2></div>
       ) : error ? (
         errorHandling(error)
         ) : (
