@@ -73,7 +73,7 @@ export const AbbilityProgressbar = (props) => {
               {base_stat}
             </span>
           )}
-          strokeWidth="10px"
+          strokeWidth={window.innerWidth>600 ? "10px":"3px"}
         />
       </div>
     </div>

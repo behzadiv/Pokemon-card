@@ -55,7 +55,6 @@ body {
   align-items: center;
   text-align: center;
   color: #d3d3d3;
-  margin-top: 80px;
 }
 .name {
   font-style: normal;
@@ -168,7 +167,6 @@ body {
 .progressbar {
   display: flex;
   align-items:  center;
-  gap: 10px;
   margin-top: -27px;
 }
 .progressbar-title,.progressbar-value {
@@ -199,4 +197,66 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+  .flip-card {
+    width: 400px;
+    height: 595px;
+    margin: 10px auto;
+  }
+  .image {
+    width: 221.25px;
+    height: 221.25px;
+  }
+  .name {
+    font-weight: 800;
+    font-size: 50px;
+  }
+  .mybtn {
+    width: 100px;
+    height: 48px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .progressbar-container{
+    margin-bottom: 2px;
+  }
+  .progressbar-title,.progressbar-value{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width:380px) {
+  .flip-card {
+    width: 300px;
+    height: 520px;
+    margin: 5px auto;
+  }
+  .image {
+    width: 250.25px;
+    height: 250.25px;
+  }
+  .name {
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .buttons-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .mybtn {
+    width: 90px;
+    height: 38px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+  .progressbar-container{
+    margin-bottom: 2px;
+  }
+  .progressbar-title,.progressbar-value{
+    font-size: 15px;
+  }
 }
