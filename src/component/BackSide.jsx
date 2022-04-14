@@ -6,7 +6,7 @@ const BackSide = () => {
   const { id, name, stats } = data;
   let changedName = "";
   if (stats) {
-    changedName =startWithUpperCase(name)
+    changedName = startWithUpperCase(name);
   }
   return (
     <>
@@ -63,10 +63,18 @@ export const AbbilityProgressbar = (props) => {
         {stat.name}
       </h2>
       <div className="progressbar">
-        <Progress percent={base_stat} showInfo={false} strokeColor={color} />
-        <span className="progressbar-value" style={{ color }}>
-          {base_stat}
-        </span>
+        <Progress
+          percent={base_stat}
+          showInfo={true}
+          strokeColor={color}
+          strokeLinecap="round"
+          format={() => (
+            <span className="progressbar-value" style={{ color }}>
+              {base_stat}
+            </span>
+          )}
+          strokeWidth="10px"
+        />
       </div>
     </div>
   );
